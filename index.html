@@ -1,78 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Mobile readability overrides -->
-  <style type="text/css">
-    body {
-      font-size: 16px !important;
-      line-height: 1.6;
-      margin: 0;
-      padding: 16px;
-    }
-
-    p, span, li, td {
-      font-size: 1rem !important;
-    }
-  </style>
-
-  <!-- Google font import -->
-  <style type="text/css">
-    @import url(https://themes.googleusercontent.com/fonts/css?kit=3qINvnjb346LubKDfLRn69t6G6Z1RrRfgULZ1AHo7mPOfsfM6rvuuu7h1pY3r_-A);
-  </style>
-
-  <!-- Google Docs exported styles -->
-  <style type="text/css">
-ol.lst-kix_m60jk9g4kapy-1.start{counter-reset:lst-ctn-kix_m60jk9g4kapy-1 0}
-ol.lst-kix_vqoslalvoyrw-2.start{counter-reset:lst-ctn-kix_vqoslalvoyrw-2 0}
-.lst-kix_m60jk9g4kapy-0>li{counter-increment:lst-ctn-kix_m60jk9g4kapy-0}
-ol.lst-kix_vqoslalvoyrw-5.start{counter-reset:lst-ctn-kix_vqoslalvoyrw-5 0}
-ul.lst-kix_jw1xwinfxwso-4{list-style-type:none}
-ul.lst-kix_jw1xwinfxwso-5{list-style-type:none}
-ul.lst-kix_jw1xwinfxwso-6{list-style-type:none}
-ul.lst-kix_jw1xwinfxwso-7{list-style-type:none}
-ul.lst-kix_jw1xwinfxwso-0{list-style-type:none}
-ul.lst-kix_jw1xwinfxwso-1{list-style-type:none}
-ul.lst-kix_jw1xwinfxwso-2{list-style-type:none}
-ul.lst-kix_jw1xwinfxwso-3{list-style-type:none}
-.lst-kix_vqoslalvoyrw-8>li{counter-increment:lst-ctn-kix_vqoslalvoyrw-8}
-.lst-kix_vqoslalvoyrw-2>li:before{content:"" counter(lst-ctn-kix_vqoslalvoyrw-2,lower-roman) ". "}
-.lst-kix_m60jk9g4kapy-1>li{counter-increment:lst-ctn-kix_m60jk9g4kapy-1}
-.lst-kix_vqoslalvoyrw-1>li:before{content:"\0025cb   "}
-ol.lst-kix_m60jk9g4kapy-7.start{counter-reset:lst-ctn-kix_m60jk9g4kapy-7 0}
-ol.lst-kix_vqoslalvoyrw-8.start{counter-reset:lst-ctn-kix_vqoslalvoyrw-8 0}
-.lst-kix_vqoslalvoyrw-0>li:before{content:"" counter(lst-ctn-kix_vqoslalvoyrw-0,decimal) ". "}
-ol{margin:0;padding:0}
-table td,table th{padding:0}
-.c2{margin-left:72pt;padding-top:12pt;padding-bottom:12pt;line-height:1.15;text-align:left}
-.c0{font-size:11pt;font-family:"Proxima Nova"}
-.c15{background-color:#ffffff;max-width:468pt;padding:72pt}
-.title{font-size:26pt;font-family:"Arial"}
-.subtitle{font-size:15pt;font-family:"Arial"}
-h1{font-size:20pt}
-h2{font-size:16pt}
-h3{font-size:14pt}
-h4{font-size:12pt}
-h5,h6{font-size:11pt}
-li,p{font-size:11pt;font-family:"Arial"}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8X: Player Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #ffffff;
+            padding: 20px;
+            max-width: 100%;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            line-height: 1.2;
+        }
+        
+        .title-8x {
+            color: #4fc1ff;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+        
+        p {
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+        
+        ul, ol {
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+        
+        li {
+            margin-bottom: 0.5em;
+            font-size: 1em;
+        }
+        
+        strong {
+            font-weight: 700;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        hr {
+            margin: 1.5em 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+        
+        a {
+            color: #1155cc;
+            text-decoration: underline;
+        }
+        
+        .nested-list {
+            margin-left: 1.5em;
+            margin-top: 0.5em;
+        }
+        
+        @media (min-width: 768px) {
+            body {
+                padding: 40px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            h2 {
+                font-size: 1.75em;
+            }
+        }
+    </style>
 </head>
-
-<body class="c15 doc-content">
-
-<h1>8X: Player Guide</h1>
-
-<h2>1. Overview</h2>
-<p>8X is a fast-paced card game that tests quick math and decision-making...</p>
-
-<!-- (Content continues exactly as in your original file) -->
-
-<p>
-  Reach out to
-  <a href="mailto:anthonyaraad@gmail.com">anthonyaraad@gmail.com</a>
-</p>
-
+<body>
+    <h1><span class="title-8x">8X</span>: Player Guide</h1>
+    
+    <h2>1. Overview</h2>
+    <p>8X is a fast-paced card game that tests quick math and decision-making. 2 players take turns playing card(s). The goal is to double or halve your opponent's last played card. Be the first to do this successfully 3 times to win the game.</p>
+    
+    <hr>
+    
+    <h2>2. Card Values</h2>
+    <p>There are 68 total cards in a deck, composed of the following values:</p>
+    <ul>
+        <li>5 copies of <strong>2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</strong></li>
+        <li>5 copies of <strong>1(4)</strong> - Either 1 or 14 (chosen when played)</li>
+        <li>3 copies of <strong>0.5</strong></li>
+    </ul>
+    
+    <hr>
+    
+    <h2>3. Modifier cards</h2>
+    <p>At the start of the game, each player gets 3 modifier cards randomly selected from 10 possible options. Each of these cards can only be used once per game. They have a variety of effects that can be used to give you an advantage or secure a prize card.</p>
+    
+    <p>The 10 possible modifier cards include:</p>
+    <ul>
+        <li><strong>Mulligan</strong> (shuffles your hand, draws 2 cards)</li>
+        <li><strong>Draw</strong> (adds a third card to your hand)</li>
+        <li><strong>Rewind</strong> (changes the last played card to the card underneath)</li>
+        <li><strong>2x</strong> (doubles your <strong>final value</strong> at the end of the turn)</li>
+        <li><strong>+1</strong></li>
+        <li><strong>+3</strong></li>
+        <li><strong>+11</strong></li>
+        <li><strong>-1</strong></li>
+        <li><strong>-3</strong></li>
+        <li><strong>-0.5</strong></li>
+    </ul>
+    
+    <hr>
+    
+    <h2>4. Setup</h2>
+    <ol>
+        <li>The 68 cards are shuffled and divided among each player (34 cards each)</li>
+        <li>Each player sets aside 3 face-down prize cards</li>
+        <li>Each player draws 2 cards from their remaining pool to form their <strong>hand</strong> (kept hidden from the opponent)</li>
+        <li>1 player is designated to start by playing the first card</li>
+    </ol>
+    
+    <hr>
+    
+    <h2>5. Turn Sequence</h2>
+    <p>Each turn follows this structure:</p>
+    <ol>
+        <li><strong>Play:</strong> Place 1 or more cards from your hand onto the field
+            <ul class="nested-list">
+                <li><strong>If you have the opportunity,</strong> halve or double your opponent's last played card
+                    <ol class="nested-list">
+                        <li>You may use addition or subtraction across multiple cards in hand</li>
+                        <li>The lowest-value card must always be placed last in multi-card plays (for either addition or subtraction)</li>
+                        <li><em>Example: Opponent plays 5 → You play 7 + 3 = 10 (double).</em></li>
+                    </ol>
+                </li>
+                <li>If you don't spot an opportunity to halve or double the last played card, play any one card from your hand. Consider wisely, as there are optimal cards to play during this neutral game.</li>
+            </ul>
+        </li>
+        <li><strong>Modify</strong> (optional): At any point during your turn, you may use modifier cards to gain the advantage or help achieve a successful play.</li>
+        <li><strong>End of Turn:</strong> If you did not double or halve this turn, then draw 1 card from your remaining pool. If you were successful, then draw 1 card from your remaining prize cards.</li>
+    </ol>
+    
+    <p>⏱ <strong>6-second rule:</strong><br>
+    If a player's timer runs out before they play a card, their turn immediately ends and the opponent is awarded 1 prize card.</p>
+    
+    <hr>
+    
+    <h2>6. Gestures & Mechanics</h2>
+    <p>You can use certain gestures to more efficiently play single cards, perform addition and subtraction, and apply modifiers.</p>
+    <ul>
+        <li><strong>Swipe up on a single card</strong> to immediately play it onto the field</li>
+        <li><strong>Swipe up on the [+] operator</strong> when two cards are selected to immediately play the sum of your selected cards</li>
+        <li><strong>Swipe down on the [+] operator</strong> when two cards are selected to immediately switch the operator and play the [-] difference of your selected cards</li>
+        <li><strong>Swipe up on a modifier card</strong> to immediately play any selected card(s) with the applied modifier</li>
+    </ul>
+    
+    <hr>
+    
+    <h2>7. Winning the Game</h2>
+    <p>The game ends immediately when:</p>
+    <ul>
+        <li>A player collects <strong>3 prize cards</strong> → <strong>that player wins</strong>.</li>
+        <li>OR, a player's deck runs out: the player with more prize cards wins.</li>
+    </ul>
+    
+    <hr>
+    
+    <h2>8. Strategy Tips</h2>
+    <ul>
+        <li><strong>Calculate your options proactively</strong>. Consider the values you can yield with your hand, with addition and subtraction. For example, if you have an [8] and [2] in your hand, you can identify that you can play an <strong>8</strong>, <strong>2</strong>, <strong>12</strong> (8 + 2), or <strong>6</strong> (8 - 2), even before your opponent has played their card. This will help you avoid missed opportunities, and keep you from running out of time.</li>
+        <li><strong>Play safely during the neutral game</strong>. If you don't see the option to double or halve the last played card, play cards that have lower likelihood to give your opponent a point. At face value, higher odd values are safer because they have fewer counters. You can also count and recall what cards you've seen played during the game so far to inform safer decisions.</li>
+        <li><strong>Modify to stretch your options.</strong> Similar to calculating your options with addition and subtraction, scan your modifiers at the start of the game and consider the additional values they can yield. For example, if you have an [8] and [2], with a [-0.5] modifier, you can apply the modifier and use [8] - [2] to reach <strong>5.5</strong> in order to halve [11].</li>
+        <li><strong>Play around your opponent's modifiers</strong>. To maximize your defensive play, refer to what modifiers your opponent has available at the start of the game to inform what you should play around. For example, if your opponent has a [-0.5] mod, it could render your high odds less safe than expected. Similarly, if your opponent has a [+11] or [2x] mod, be more wary of playing high value cards.</li>
+    </ul>
+    
+    <hr>
+    
+    <h2>9. FAQ</h2>
+    <p><em>Reach out to <a href="mailto:anthonyaraad@gmail.com">anthonyaraad@gmail.com</a>! This will be filled with answers to commonly-asked questions</em></p>
 </body>
 </html>
